@@ -1,0 +1,232 @@
+Nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 20px;
+    width: 100%;
+    background-color: #f5f4fe;
+
+}
+.mt-5{
+    background-color: #f5f4fe; 
+}
+/* Navbar Logo */
+.logo a {
+    text-decoration: none;
+    color: #ff470d;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+/* navbra middele section */
+.overview {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview p {
+    color: #000;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.overview .search {
+    display: flex;
+    margin-left: 120px;
+    background-color: #f2f2f2;
+}
+
+.overview .search i {
+    background-color: #fff;
+    color: red;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.overview .search input {
+    width: 300px;
+    border: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* navbra end section */
+.side-menu i {
+    padding-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn {
+    color: #fff !important;
+    background-color: #ff6e40;
+    border-color: #ff6e40;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 0.675rem 1.25rem;
+}
+
+.btn i {
+    background-color: #ff6e40;
+    color: white;
+}
+
+/* burger resposive */
+.burger {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width:786px) {
+    .burger {
+        display: block;
+    }
+
+    .logo,
+    .overview .search,
+    .side-menu {
+        display: none;
+    }
+}
+
+
+/* side-Menubar css */
+
+.sidebar {
+    width: 20%;
+    height: 100vh;
+    text-align: center;
+    height: 100vh;
+    padding-top: 25px;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    overflow-x: hidden;
+    margin-top: 94px;
+    background-color: #f5f4fe;
+    /* border-right: 2px solid #ff470d; */
+}
+
+.sidebar::-webkit-scrollbar {
+    /* display: none;   */
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+
+}
+
+.admin-info {
+    padding: 1px;
+    width: 300px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px;
+}
+
+.admin-info span {
+    padding: 2px;
+    background-color: #fff;
+}
+
+/* list */
+.sidebar .tag {
+    color: #ff6e40;
+}
+
+.sidebar ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+    background-color: #ff470d;
+    padding: 12px;
+    width: 250px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    text-align: justify;
+    padding-left: 60px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    transition: 0.5s all;
+    color: white;
+}
+
+
+
+.main {
+    width: 80%;
+    margin-left: 21%;
+    /* border-right: 1px solid black; */
+    text-align: center;
+    background-color: #f5f4fe;
+    height: 100vh;
+    padding-top: 135px;
+}
+
+@media only screen and (max-width:786px) {
+
+    .sidebar {
+        display: none;
+        /* width: 0%; */
+    }
+
+    .main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* responsive side navbar */
+    .sidebar-menu {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        align-items: center;
+        text-align: center;
+    }
+    .class{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 30vh;
+        margin-top: 25%;
+        background-color: black;
+        color: white;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .topbar-menu a{
+        text-align: center;
+        
+        margin-left: -110px;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+   
+}
+
+

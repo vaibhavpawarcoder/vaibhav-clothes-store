@@ -1,0 +1,128 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+.show{
+    
+    box-shadow: 1px 1px  1px blanchedalmond;
+}
+.woman{
+    background-color: blanchedalmond;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.men{
+    background-color: #98FB98;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+.kid{
+    background-color: #AFEEEE;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+.woman .text{
+margin-top: 250px;
+margin-left: 10%;
+} 
+.men .text, .kid .text{
+    margin-top: 150px;
+    
+}
+.woman .text h1, .men .text h1, .kid .text h1{
+    font-family: "Cookie", cursive;
+    color: #111111;
+    margin-bottom: 5px;
+}
+.woman .text p, .men .text p, .kid .text p{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #666666;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+}
+/*  */
+.btn{
+    background-color: #D8BFD8;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+}
+.men .text a, .kid .text a, .men .text p, .kid .text p{color: aliceblue;}
+
+@media only screen and (max-width:786px) {
+    .woman .text p{display: none;}
+    .men .text, .kid .text{
+        position: absolute;
+        float: left;
+    }
+    .woman img {width: 200px;}
+    .men img, .kid img{margin-left: 35%; width: 230px; }
+    .kid img{margin-left: 34%;  width: 230px;}
+}
+
+.men-section{
+    background-image: url("IMG/men.png");
+    background-color: #f2f2f2;
+    
+}
+
+footer{
+    background-color: #fff;
+    color: #000;
+}
+footer li{
+    list-style: none;
+}
+footer a{
+    color: black;
+    font-family: cursive;
+    transition: 0.5s all;
+}
+footer a:hover{
+    color: black;
+}
+
+footer form input{
+    /* border: none; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+}
+
+footer form button{
+    padding: 10px;
+    margin-left: -10px;
+    background-color: #ca1515;
+    color: #fff;
+    border-left: none;
+}
+
+@media only screen and (max-width:786px) {
+    .img-back{
+        height: 30vh;
+        width: 100%;
+    }
+}
+
+
+
+.product{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+}

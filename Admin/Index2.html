@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="CSS/Nav.css">
+    <link rel="stylesheet" href="CSS/body.css">
+
+    <title>Vaibhav - Store</title>
+</head>
+
+<body>
+    <!-- top Navbar -->
+    <Nav>
+        <!-- left-burger -->
+        <div class="left-burger burger" onclick="sideMenu()">
+            <i class="bi bi-list"></i>
+        </div>
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="">Vaibhav Store</a>
+        </div>
+
+        <!-- middle menu -->
+        <div class="overview">
+            <p>Dashboard</p>
+            <div class="search">
+                <i class="bi bi-search"></i>
+                <input type="text" class="form-control" placeholder="Search..."
+                    aria-label="Example text with button addon" aria-describedby="button-addon1" fdprocessedid="z87up5">
+            </div>
+        </div>
+
+        <!-- End menu -->
+        <div class="side-menu topbar-menu" id="topbar">
+            <a href=""> <i class="bi bi-bell"></i></a>
+            <a href=""> <i class="bi bi-cart3"></i></a>
+            <button class="btn "> <i class="bi bi-plus-circle"></i> Add User</button>
+        </div>
+
+        <!-- right-burger -->
+
+        <div class="right-burger burger" id="topbar" onclick="topMenu()">
+            <i class="bi bi-three-dots-vertical"></i>
+        </div>
+
+    </Nav>
+
+
+    <div class="container-fluid">
+
+        <!-- sidebar -->
+
+        <div class="sidebar sidebar-menu" id="sidebar">
+            <!-- user info -->
+            <div class="admin-info">
+                <i class="bi bi-person-circle"></i>
+                <span>
+                    <p style="color: #ff6e40;">Vaibhav Pawar</p>
+                    <p>Devloper</p>
+                </span>
+            </div>
+
+            <p class="mt-3 tag">E-Commerce</p>
+            <!-- Dashboard link -->
+            <ul class="mb-2">
+                <li>
+                    <a href=""><i class="bi bi-speedometer2"></i> Dashboard</a>
+                </li>
+
+                <li>
+                    <a href=""><i class="bi bi-list-check"></i> Order</a>
+                </li>
+
+                <li>
+                    <a href=""><i class="bi bi-truck"></i> Product</a>
+                </li>
+
+                <li>
+                    <a href=""><i class="bi bi-person-badge"></i> Customers</a>
+                </li>
+
+                <li>
+                    <a href=""><i class="bi bi-list"></i> Invoices</a>
+                </li>
+            </ul>
+
+            <!-- users info -->
+
+
+            <p class="mt-3 tag">Page</p>
+
+            <ul class="mb-2">
+                <li>
+                    <a href=""><i class="bi bi-speedometer2"></i> Profile</a>
+                </li>
+
+                <li>
+                    <a href=""><i class="bi bi-list-check"></i> Users</a>
+                </li>
+
+                <li>
+                    <a href=""><i class="bi bi-truck"></i> Settings</a>
+                </li>
+
+                <li>
+                    <a href=""><i class="bi bi-person-badge"></i> Search</a>
+                </li>
+
+                <li>
+                    <a href=""><i class="bi bi-list"></i> Emails</a>
+                </li>
+            </ul>
+
+            <!-- Log Out -->
+
+            <p class="mt-3 tag">Log-out</p>
+
+            <ul class="mb-5">
+                <li>
+                    <a href=""><i class="bi bi-speedometer2"></i> Log-out</a>
+                </li>
+
+                <li>
+                    <a href=""><i class="bi bi-logout"></i> Log-Out</a>
+                </li>
+            </ul>
+
+
+        </div>
+
+        <!-- Main Content satrt -->
+        <div class="main">
+
+            <!-- main -top -section -->
+            <div class="container">
+
+                <div class="row justify-content-center">
+                    <div class="col-md-10 profile">
+                        <!-- <img src="IMG/three.jpg" /> -->
+                        <div class="row">
+                            <div class="col-md-5 info ">
+                                <img src="USER/vaibhav.jpeg" width="130px" class="rounded mt-5" />
+                                <span class="pt-3">
+                                    
+                                <p class="fs-3 text-danger fw-2 pt-5">Name</p>
+                                <p class="">devloper</p>
+                                </span>
+    
+                            </div>
+                            <div class="col-md-4 pt-5">
+                                <a href="" class="btn mt-3">Update</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        function sideMenu() {
+            console.log("side Click")
+            let sidebar= document.getElementById('sidebar');
+            if(sidebar.style.display==='block'){
+            sidebar.style.display='none'
+            }else{
+                sidebar.style.display='block'
+            }
+        }
+        function topMenu() {
+            console.log("top Click")
+            document.getElementById('topbar').classList.toggle('class')
+        }
+    </script>
+
+    <script src="JS/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

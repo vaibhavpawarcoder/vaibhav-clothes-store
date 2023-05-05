@@ -1,0 +1,108 @@
+Nav{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    /* border-bottom: 1px solid black; */
+    border-bottom-left-radius: 25px;
+    box-shadow: 7px 7px 7px darkgray;
+}
+.logo a{
+    font-size: 25px;
+    color: black;
+    text-transform: uppercase;
+    color: black;
+    font-family: cursive;
+}
+
+.menu{ display: flex;}
+.menu .close{
+    display: none;
+}
+.menu ul{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+.menu ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+.menu ul li a{
+    font-size: 18px;
+    color: black;
+    transition: 0.8s all;
+}
+.menu ul li a:hover{
+    font-size: 20px;
+}
+
+
+
+.right-menu{
+   
+}
+
+.ri-login a{
+    font-size: 15px;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.right-menu a i{
+    font-size: 19px;
+    color: black;
+    padding-left: 20px;
+}
+
+.left-menubar, .login{display: none;}
+
+
+
+@media only screen and (max-width:786px) {
+    .menu, .ri-login a{display: none;}
+    .left-menubar{display: block;}
+    .left-menubar i{
+        font-size: 20px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+    .responsive{
+        width: 100%;
+        display: block;
+        position: absolute;
+        top:0%;
+        z-index: 1;
+        background-color: #f2f2f2;
+        height: 100vh;
+        
+    }
+    .responsive .close{
+        display: block;
+        position: absolute;
+        right: 13%;
+        top: 5%;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    .responsive ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    .responsive ul li{
+        padding-top: 50px;
+    }
+    .responsive .login{
+        display: block;
+        margin-top:50px;
+        color: #f2f2f2;
+        font-size: 20px;
+        width: 250px;
+        align-items: center;
+        text-align: center;
+        margin-left: 10%;
+    }
+}

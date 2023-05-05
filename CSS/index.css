@@ -1,0 +1,129 @@
+ .box {
+        margin-top: -10%;
+        position: relative;
+    }
+a{
+    color: #fff;
+}
+.page{
+    background-color: #7d879c;
+    color: White;
+}
+
+    .dis {
+        font-size: 60px;
+        color: #ca1515;
+        font-family: "Cookie", cursive;
+        line-height: 46px;
+        margin-bottom: 10px;
+    }
+
+    .discount__text {
+        background: #f4f4f4;
+        height: 390px;
+        padding: 75px 90px 50px;
+        text-align: center;
+    }
+
+    .discount__text a {
+        font-size: 14px;
+        color: #111111;
+        text-transform: uppercase;
+        font-weight: 700;
+        position: relative;
+        padding: 0 0 3px;
+        display: inline-block;
+    }
+
+    .discount__text a:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        background: #ca1515;
+        content: "";
+    }
+
+    .discount__text__title {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 60px;
+    }
+
+    .discount__text__title {}
+
+    .discount__text__title:after {
+        position: absolute;
+        left: 50%;
+        top: -38px;
+        height: 183px;
+        width: 183px;
+        background: antiquewhite;
+        content: "";
+        border-radius: 50%;
+        z-index: -1;
+        margin-left: -91.5px;
+    }
+
+    .discount__text__title span {
+        font-size: 12px;
+        color: #111111;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .discount__text__title h2 {
+        font-size: 60px;
+        color: #ca1515;
+        font-family: "Cookie", cursive;
+        line-height: 46px;
+        margin-bottom: 10px;
+    }
+
+    .discount__text__title h5 {
+        color: #ca1515;
+        font-weight: 700;
+    }
+
+    .discount__text__title h5 span {
+        font-size: 14px;
+        color: #111111;
+        margin-right: 4px;
+    }
+
+
+    footer {
+        background-color: #fff;
+        color: #000;
+    }
+
+    footer li {
+        list-style: none;
+    }
+
+    footer a {
+        color: black;
+        font-family: cursive;
+        transition: 0.5s all;
+    }
+
+    footer a:hover {
+        color: black;
+    }
+
+    footer form input {
+        /* border: none; */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding: 10px;
+    }
+
+    footer form button {
+        padding: 10px;
+        margin-left: -10px;
+        background-color: #ca1515;
+        color: #fff;
+        border-left: none;
+    }
